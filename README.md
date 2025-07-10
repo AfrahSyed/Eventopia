@@ -1,29 +1,30 @@
-# Online Event Booking Platform — Containerization & Kubernetes Deployment
+# 🎉Eventopia- Online Event Booking Platform — Containerization & Kubernetes Deployment
 
-## Project Overview
-This project extends an Online Event Booking Platform by containerizing all microservices and deploying them using Kubernetes. It demonstrates DevOps practices including Docker containerization, Docker Compose orchestration, Kubernetes deployments, services, config management, and ingress setup.
-
----
-
-## Microservices Included
-- **User Service**  
-- **Event Service**  
-- **Booking Service**  
-- **Notification Service**  
-- **Frontend Service**
+This project demonstrates a microservices-based **Online Event Booking Platform** containerized with Docker and deployed using Kubernetes. It showcases essential DevOps practices such as container orchestration, centralized configuration, ingress routing, and service scaling.
 
 ---
 
-## Technologies Used
-- Docker & Docker Compose  
-- Kubernetes (Deployments, Services, ConfigMaps, Secrets, Ingress)  
-- PostgreSQL (User & Booking databases)  
-- MongoDB (Event & Notification databases)  
-- NGINX Ingress Controller (for routing & service exposure)
+## 🧩 Microservices
+
+| Service             | Tech Stack        | Database        |
+|---------------------|-------------------|-----------------|
+| 🧑‍💼 User Service     | FastAPI (Python)   | PostgreSQL      |
+| 📅 Event Service     | Node.js (Express) | MongoDB         |
+| 📝 Booking Service   | FastAPI (Python)   | PostgreSQL      |
+| 🔔 Notification Service | Node.js (Express) | MongoDB         |
+| 🌐 Frontend          | React.js          | —               |
+
+Each service runs independently in its own container and communicates via internal networking.
 
 ---
 
-### Prerequisites
-- Docker & Docker Compose installed  
-- Kubernetes cluster (Minikube, Docker Desktop, or cloud provider)  
-- `kubectl` CLI configured to access your cluster
+## 🚀 Tech Stack
+
+- **Frontend:** React.js  
+- **Backend:** FastAPI & Node.js (Express)  
+- **Databases:** PostgreSQL, MongoDB  
+- **Containerization:** Docker, Docker Compose  
+- **Orchestration:** Kubernetes (Minikube or Docker Desktop)  
+- **Configs:** ConfigMaps, Secrets  
+
+---
